@@ -1,7 +1,7 @@
-﻿using Aeonfire.Data;
+﻿using AeonFire.Data;
 using UnityEngine;
 
-namespace Aeonfire.Components;
+namespace AeonFire.Components;
 
 internal class PickupComponent : MonoBehaviour
 {

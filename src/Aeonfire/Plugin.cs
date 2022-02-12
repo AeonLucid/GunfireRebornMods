@@ -1,9 +1,9 @@
-﻿using Aeonfire.Components;
+﻿using AeonFire.Components;
 using BepInEx;
 using BepInEx.IL2CPP;
 using BepInEx.Logging;
 
-namespace Aeonfire;
+namespace AeonFire;
 
 [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
 public class Plugin : BasePlugin

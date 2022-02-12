@@ -1,4 +1,4 @@
-﻿namespace Aeonfire.Data;
+﻿namespace AeonFire.Data;
 
 internal static class GunfireShape
 {

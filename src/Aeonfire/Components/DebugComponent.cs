@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Aeonfire.Components;
+namespace AeonFire.Components;
 
 internal class DebugComponent : MonoBehaviour
 {
