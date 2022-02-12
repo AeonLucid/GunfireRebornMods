@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="../GunfireRebornMods.props" />
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <AssemblyName>Aeonfire</AssemblyName>
+        <Description>My first plugin</Description>
+        <Version>1.0.0</Version>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>latest</LangVersion>
+        <RootNamespace>Aeonfire</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BepInEx.IL2CPP" Version="6.0.0-be.546" IncludeAssets="compile" />
+        <PackageReference Include="BepInEx.PluginInfoProps" Version="1.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="$(BepInExDir)\unhollowed\*.dll">
+            <Private>false</Private>
+        </Reference>
+        <Reference Remove="$(BepInExDir)\unhollowed\netstandard.dll" />
+    </ItemGroup>
+
+    <Target Name="CopyToBepInExPlugins" AfterTargets="Build">
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(BepInExDir)\plugins\" />
+    </Target>
+
+</Project>

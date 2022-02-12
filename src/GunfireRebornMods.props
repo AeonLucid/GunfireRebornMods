@@ -1,0 +1,6 @@
+﻿<Project>
+	<PropertyGroup>
+		<GameDir>E:\Games\SteamLibrary\steamapps\common\Gunfire Reborn</GameDir>
+		<BepInExDir>$(GameDir)\BepInEx</BepInExDir>
+	</PropertyGroup>
+</Project>
