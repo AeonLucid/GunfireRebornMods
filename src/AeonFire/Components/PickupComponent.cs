@@ -12,7 +12,10 @@ internal class PickupComponent : MonoBehaviour
             if (pair.value.IsCanOP)
             {
                 if (pair.value.Shape == GunfireShape.DropCoin ||
-                    pair.value.Shape == GunfireShape.DropMedic)
+                    pair.value.Shape == GunfireShape.DropMedic ||
+                    pair.value.Shape == GunfireShape.DropXPSmall ||
+                    pair.value.Shape == GunfireShape.DropXPMedium ||
+                    pair.value.Shape == GunfireShape.DropXPLarge)
                 {
                     pair.value.AutoPickRange = float.MaxValue;
                 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#if DEBUG
+using UnityEngine;
 
 namespace AeonFire.Components;
 
@@ -12,10 +13,10 @@ internal class DebugComponent : MonoBehaviour
             {
                 var playerId = p.key;
                 var player = p.value;
-                
+
                 // Player name.
                 Plugin.Log.LogInfo($"Name {player.playerProp.Name}");
-                
+
                 // Stats.
                 Plugin.Log.LogInfo($"- Health {player.playerProp.HP} / {player.playerProp.HPMax}");
                 Plugin.Log.LogInfo($"- Shield {player.playerProp.Shield} / {player.playerProp.ShieldMax}");
@@ -43,3 +44,4 @@ internal class DebugComponent : MonoBehaviour
         }
     }
 }
+#endif
